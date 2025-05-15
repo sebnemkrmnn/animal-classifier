@@ -36,8 +36,9 @@ Conv2D(3 → 32) → ReLU → MaxPool2d
 Conv2D(32 → 64) → ReLU → MaxPool2d  
 Flatten → Linear(64×32×32 → 128) → ReLU → Linear(128 → 10)
 ```
-
-Eğitim sonucunda oluşan ağırlıklar `simple_cnn_animals.pth` dosyası olarak kayıt altına alınmıştır.
+Eğitim sonucunda oluşan ağırlıklar `.pth` dosyası olarak kaydedilmiştir.  
+📌 **Not:** Model `.pth` dosyası GitHub'a yüklenmemiştir.  
+💾 **Modeli eğitmek için `train_model.ipynb` dosyasını çalıştırınız.**
 
 ---
 
@@ -49,7 +50,7 @@ Eğitim sonucunda oluşan ağırlıklar `simple_cnn_animals.pth` dosyası olarak
 ├── train_model.ipynb         # Modelin eğitildiği notebook
 ├── data_preprocess.ipynb     # Görsellerin dönüştürüldüğü notebook
 ├── rename_folders.ipynb      # Klasör isimleri İngilizceye çevriliyor
-├── simple_cnn_animals.pth    # Eğitilmiş modelin ağırlık dosyası
+├── simple_cnn_animals.pth    # (İsteğe bağlı, yüklenmediyse eğitimle oluşturulur)
 ├── README.md                 # Projenin tanımı ve dökümantasyonu
 ```
 
@@ -124,4 +125,6 @@ Tarayıcınızda otomatik olarak arayüz açılır. Görsel yüklediğinizde mod
 - Bu proje eğitsel amaçla geliştirilmiştir.
 - Streamlit, yerel olarak tarayıcıda çalışır ve özel bir sunucu kurulumu gerektirmez.
 - Veri seti Kaggle üzerinden temin edilmiştir.
+- Modeli yeniden oluşturmak için `train_model.ipynb` dosyasını çalıştırmanız yeterlidir.
+
 
